@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/ci-cd-demo.git'
+                git credentialsId: 'GitHub_kinnapot', url: 'https://github.com/DapperKinnapot/ci-cd-demo.git', branch: 'main'
             }
         }
 
